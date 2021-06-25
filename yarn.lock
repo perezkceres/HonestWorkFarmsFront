@@ -1835,9 +1835,9 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@pancakeswap-libs/uikit@HonestWorkFarm/honestfarm-uikit":
+"@pancakeswap-libs/uikit@HonestWorkFarm/honestwork-uikit":
   version "0.10.2"
-  resolved "https://codeload.github.com/HonestWorkFarm/honestfarm-uikit/tar.gz/c13b001ed42ce5c476c1d96787c8b3413e708093"
+  resolved "https://codeload.github.com/HonestWorkFarm/honestwork-uikit/tar.gz/c52e4ba17446564c6ba27608aedc69cb7bcf5656"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
