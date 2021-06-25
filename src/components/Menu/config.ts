@@ -68,6 +68,10 @@ const config: MenuEntry[] = [
         label: "Github",
         href: "https://github.com/HonestWorkFarm/",
       },
+      {
+        label: "Docs",
+        href: "https://honestwork.gitbook.io/honestwork-farms/",
+      },
      
     ],
   },

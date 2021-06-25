@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import BigNumber from 'bignumber.js'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { provider } from 'web3-core'
-import { Image, Heading } from '@pancakeswap-libs/uikit'
+import { Image, Heading ,LinkExternal} from '@pancakeswap-libs/uikit'
 import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK, CAKE_POOL_PID } from 'config'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
@@ -16,6 +16,7 @@ import useI18n from 'hooks/useI18n'
 import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import FarmTabButtons from './components/FarmTabButtons'
 import Divider from './components/Divider'
+import fib from './fib.png';
 
 export interface FarmsProps{
   tokenMode?: boolean
@@ -108,8 +109,12 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         }
       </Heading>
       <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        50% of the Deposit Fee will be used to buyback honest and Burn the Tokens
+       Find more about our unique emission rate modulation:
       </Heading>
+      <LinkExternal mb="5px" 
+style={{ textAlign: 'center' }} small href="https://honestwork.gitbook.io/honestwork-farms/farms-pools/farm-pumpamentals">
+          <img  width="233" src={ fib } alt="fib"/>
+          </LinkExternal>
     
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly}/>
       <div>
